@@ -1,0 +1,3 @@
+import type {Metadata} from 'next'; import './globals.css'; import {Header,Footer} from './components';
+export const metadata:Metadata={metadataBase:new URL('https://upstride.com'),title:{default:'UPSTRIDE — Your Next Step Forward',template:'%s | UPSTRIDE'},description:'Connected digital solutions, practical skills and tools for ambitious businesses.',openGraph:{title:'UPSTRIDE — Digital Solutions. Skills. Growth.',description:'Your next step forward.',images:['/og-image.jpg']}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body><Header/>{children}<Footer/></body></html>}
