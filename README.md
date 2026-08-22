@@ -25,7 +25,11 @@ pnpm start
 
 ## Production wiring
 
-Before launch, replace the placeholder domain/email settings and Open Graph asset, connect the consultation form to an approved API/CRM, add payment checkout hooks for resources, and connect academy enrollment/LMS services. No fake backend, payments or authentication are included.
+The consultation form and `/admin` inquiry workspace use Supabase. Create a Supabase project, run `supabase.sql` in its SQL Editor, copy `.env.example` to `.env.local`, and fill in the four values. In Vercel, add the same variables under **Project Settings → Environment Variables**, then redeploy. Keep the service-role key and admin values secret; never expose them through `NEXT_PUBLIC_` variables.
+
+Open `/admin` and sign in with `ADMIN_PASSWORD`. Admin sessions use a secure HTTP-only cookie signed with `ADMIN_SECRET`. The dashboard supports viewing inquiries and updating their status.
+
+Before launch, also replace the placeholder domain/email settings and Open Graph asset, add payment checkout hooks for resources, and connect academy enrollment/LMS services.
 
 ## Deploy
 

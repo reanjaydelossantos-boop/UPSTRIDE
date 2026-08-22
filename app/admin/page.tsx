@@ -1,0 +1,1 @@
+import {AdminDashboard} from './ui';export const metadata={title:'Admin',robots:{index:false,follow:false}};export default function Page(){return <main className="admin-page"><AdminDashboard/></main>}
