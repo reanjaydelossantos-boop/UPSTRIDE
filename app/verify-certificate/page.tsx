@@ -1,0 +1,1 @@
+import {Verifier} from './verifier'; export const metadata={title:'Verify a Certificate'}; export default function Page(){return <main><section className="pagehero verifyhero"><div className="eyebrow">UPSTRIDE ACADEMY</div><h1>Certificate verification</h1><p>Enter an Upstride Academy certificate ID to view its demo completion record.</p></section><Verifier/></main>}
