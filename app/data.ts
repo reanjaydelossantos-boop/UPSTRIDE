@@ -17,7 +17,14 @@ export const academy:Item[]=[
 ].map((name,i)=>({slug:name.toLowerCase().replaceAll(' & ','-').replaceAll(' ','-'),title:`${name} Specialist`,kicker:i===9?'Advanced program':'Career-ready program',description:`Build practical ${name.toLowerCase()} capability through guided projects, reusable systems and a portfolio-ready capstone.`,image:img(['photo-1523240795612-9a054b0db644','photo-1516321318423-f06f85e504b3','photo-1498050108023-c5249f4df085','photo-1535223289827-42f1e9919769','photo-1551836022-d5d88e9218df'][i%5]),tags:['10 modules','Practical capstone','Certificate']}));
 export const resources:Item[]=[
  'Your First Step Into Online Work','Template Library','SOP Collection','AI Prompt Pack','Growth Checklists','Client Toolkit'
-].map((title,i)=>({slug:title.toLowerCase().replaceAll(' ','-'),title,kicker:i===0?'Free starter eBook':'Ready-to-use toolkit',description:i===0?'A realistic and encouraging introduction to online work, freelancing, digital opportunity and finding the niche you are ready to learn.':`A focused, practical resource with frameworks, worksheets and implementation prompts for ${title.toLowerCase()}.`,image:img(['photo-1456513080510-7bf3a84b82f8','photo-1517841905240-472988babdf9','photo-1499750310107-5fef28a66643','photo-1434030216411-0b793f4b4173'][i%4]),tags:i===0?['Free 10-page PDF','Freelance starter guide','Assessment pathway']:['Free access','Editable files','Practical tools']}));
+].map((title,i)=>({slug:title.toLowerCase().replaceAll(' ','-'),title,kicker:i===0?'Free starter eBook':'Free practical resource',description:[
+  'A realistic and encouraging introduction to online work, freelancing, digital opportunity and finding the niche you are ready to learn.',
+  'Reusable briefs, scope documents, project updates and handoff templates for clearer professional delivery.',
+  'A practical system for documenting recurring work, quality checks, exceptions and ownership.',
+  'Structured prompts, review methods and safety checks for responsible AI-supported business work.',
+  'Journey audits and experiment checklists for finding and improving the weakest point in growth.',
+  'Discovery, kickoff, communication, change and handoff tools for professional client engagements.'
+][i],image:img(['photo-1456513080510-7bf3a84b82f8','photo-1517841905240-472988babdf9','photo-1499750310107-5fef28a66643','photo-1434030216411-0b793f4b4173'][i%4]),tags:i===0?['Free 10-page PDF','Freelance starter guide','Assessment pathway']:['Free access','Guided exercises','Course pathway']}));
 const workRows:[string,string,string,string,string,string[]][]=[
  ['lumera-skin','Luméra Skin','Multi-channel commerce','A premium skincare ecosystem unifying discovery, storefront, marketplace inventory and post-purchase retention.','photo-1556228720-195a672e8a03',['E-commerce','Retention','Operations']],
  ['northline-home-services','Northline Home Services','Lead-to-booking system','A local services acquisition system connecting demand capture, qualification, scheduling and follow-up.','photo-1581578731548-c64695cc6952',['Lead gen','Booking','CRM']],
